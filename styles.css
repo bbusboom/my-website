@@ -1,0 +1,185 @@
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --muted: #5c5c5c;
+  --accent: #9d2235; /* Arkansas cardinal red */
+  --border: #e2e2e2;
+  --max-width: 720px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.55;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero {
+  background: var(--accent);
+  color: #fff;
+  padding: 48px 0 32px;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0 0 4px;
+  font-size: 2.2rem;
+}
+
+.hero .tagline {
+  margin: 0 0 8px;
+  font-weight: 500;
+  opacity: 0.95;
+}
+
+.hero .contact {
+  margin: 0 0 20px;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.hero .contact a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.quick-links a {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  transition: background 0.15s ease;
+}
+
+.quick-links a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+main {
+  padding: 40px 20px 60px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 1.3rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 6px;
+  margin-bottom: 16px;
+}
+
+.entry {
+  margin-bottom: 24px;
+}
+
+.entry-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.entry-header h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.entry-header .date {
+  color: var(--muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.entry-subtitle {
+  margin: 2px 0 8px;
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 24px 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  border-top: 1px solid var(--border);
+}
+
+/* Linktree-style page */
+.links-page {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 56px 20px;
+  text-align: center;
+}
+
+.links-page h1 {
+  margin: 0 0 4px;
+  font-size: 1.6rem;
+}
+
+.links-page .tagline {
+  color: var(--muted);
+  margin-bottom: 32px;
+  font-size: 0.9rem;
+}
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.link-button {
+  display: block;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+.link-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+.link-button.secondary {
+  background: #fff;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+}
