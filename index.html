@@ -5,27 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blake Busboom | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="container">
+
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a class="nav-logo" href="#top">BB</a>
+      <div class="nav-links">
+        <a href="#about" data-nav-link>About</a>
+        <a href="#experience" data-nav-link>Experience</a>
+        <a href="#skills" data-nav-link>Skills</a>
+        <a href="#education" data-nav-link>Education</a>
+        <a href="#contact" data-nav-link>Contact</a>
+        <a href="links.html" class="nav-cta">All Links</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="container hero-inner">
+      <img
+        class="headshot"
+        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Crect width='200' height='200' fill='%23c9ced3'/%3E%3C/svg%3E"
+        alt="headshot">
       <h1>Blake Busboom</h1>
       <p class="tagline">Supply Chain Management &amp; Information Systems | University of Arkansas</p>
       <p class="contact">Fayetteville, AR &nbsp;|&nbsp; 720-252-1373 &nbsp;|&nbsp; <a href="mailto:blake.busboom@gmail.com">blake.busboom@gmail.com</a></p>
-      <nav class="quick-links">
-        <a href="links.html">All Links</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-      </nav>
     </div>
   </header>
 
-  <main class="container">
+  <main>
 
-    <section id="about">
-      <h2>About</h2>
+    <section id="about" class="container reveal">
+      <h2><i class="fa-solid fa-user"></i> About</h2>
       <p>
         Business student at the Sam M. Walton College of Business pursuing dual degrees in
         Supply Chain Management and Information Systems, with a minor in Accounting. Currently
@@ -35,9 +48,9 @@
       </p>
     </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <div class="entry">
+    <section id="education" class="container reveal">
+      <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+      <div class="entry-card">
         <div class="entry-header">
           <h3>University of Arkansas, Fayetteville, AR</h3>
           <span class="date">Expected Graduation: May 2027</span>
@@ -49,111 +62,156 @@
       </div>
     </section>
 
-    <section id="experience">
-      <h2>Business &amp; Finance Experience</h2>
+    <section id="experience" class="container reveal">
+      <h2><i class="fa-solid fa-briefcase"></i> Business &amp; Finance Experience</h2>
 
-      <div class="entry">
-        <div class="entry-header">
-          <h3>ICS Intern &mdash; J.B. Hunt Transport Services</h3>
-          <span class="date">Summer 2026</span>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-marker"></span>
+          <div class="timeline-card">
+            <div class="entry-header">
+              <h3>ICS Intern &mdash; J.B. Hunt Transport Services</h3>
+              <span class="date">Summer 2026</span>
+            </div>
+            <p class="entry-subtitle">Fayetteville, AR</p>
+            <ul>
+              <li>Sourced flatbed capacity (Conestoga and tarped flatbed) for carrier lanes across the network</li>
+              <li>Analyzed carrier pricing dynamics such as deadhead and reload constraints to support sourcing decisions</li>
+              <li>Explored AI-driven opportunities across ICS operations, including load tendering, spot pricing, and the J.B. Hunt 360 Marketplace platform</li>
+            </ul>
+          </div>
         </div>
-        <p class="entry-subtitle">Fayetteville, AR</p>
-        <ul>
-          <li>Sourced flatbed capacity (Conestoga and tarped flatbed) for carrier lanes across the network</li>
-          <li>Analyzed carrier pricing dynamics such as deadhead and reload constraints to support sourcing decisions</li>
-          <li>Explored AI-driven opportunities across ICS operations, including load tendering, spot pricing, and the J.B. Hunt 360 Marketplace platform</li>
-        </ul>
-      </div>
 
-      <div class="entry">
-        <div class="entry-header">
-          <h3>Junior Underwriter &mdash; Busboom Group</h3>
-          <span class="date">June&ndash;Mid-July 2026</span>
+        <div class="timeline-item">
+          <span class="timeline-marker"></span>
+          <div class="timeline-card">
+            <div class="entry-header">
+              <h3>Junior Underwriter &mdash; Busboom Group</h3>
+              <span class="date">June&ndash;Mid-July 2026</span>
+            </div>
+            <p class="entry-subtitle">Dallas-Fort Worth, TX</p>
+            <ul>
+              <li>Underwrote multifamily acquisition opportunities, including lease-up analysis and submarket supply/demand research</li>
+              <li>Built multi-tab Excel proforma models, stress-testing cap rate and IRR sensitivity across acquisition scenarios</li>
+            </ul>
+          </div>
         </div>
-        <p class="entry-subtitle">Dallas-Fort Worth, TX</p>
-        <ul>
-          <li>Underwrote multifamily acquisition opportunities, including lease-up analysis and submarket supply/demand research</li>
-          <li>Built multi-tab Excel proforma models, stress-testing cap rate and IRR sensitivity across acquisition scenarios</li>
-        </ul>
-      </div>
 
-      <div class="entry">
-        <div class="entry-header">
-          <h3>Real Estate Intern &mdash; Busboom Group</h3>
-          <span class="date">May 2023&ndash;August 2023</span>
+        <div class="timeline-item">
+          <span class="timeline-marker"></span>
+          <div class="timeline-card">
+            <div class="entry-header">
+              <h3>Real Estate Intern &mdash; Busboom Group</h3>
+              <span class="date">May 2023&ndash;August 2023</span>
+            </div>
+            <p class="entry-subtitle">Dallas-Fort Worth, TX</p>
+            <ul>
+              <li>Audited leases and assisted managers with daily property operations tasks</li>
+              <li>Led prospective clients on property tours, developing sales skills</li>
+            </ul>
+          </div>
         </div>
-        <p class="entry-subtitle">Dallas-Fort Worth, TX</p>
-        <ul>
-          <li>Audited leases and assisted managers with daily property operations tasks</li>
-          <li>Led prospective clients on property tours, developing sales skills</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="operations">
-      <h2>Operations Experience</h2>
-
-      <div class="entry">
-        <div class="entry-header">
-          <h3>Warehouse Associate &mdash; Amazon Last Mile Distribution Center</h3>
-          <span class="date">Summer 2025</span>
-        </div>
-        <p class="entry-subtitle">Frisco, TX</p>
-        <ul>
-          <li>Worked the midnight shift, trained in delivering approachable, high-quality customer service</li>
-          <li>Demonstrated flexibility by working multiple positions and closing every shift</li>
-        </ul>
-      </div>
-
-      <div class="entry">
-        <div class="entry-header">
-          <h3>Package Handler &mdash; UPS Warehouse</h3>
-          <span class="date">2025</span>
-        </div>
-        <p class="entry-subtitle">Springdale, AR</p>
-        <ul>
-          <li>Loaded and unloaded semis and UPS trucks, working multiple positions across shifts</li>
-        </ul>
       </div>
     </section>
 
-    <section id="leadership">
-      <h2>Leadership &amp; Military Experience</h2>
-      <div class="entry">
-        <div class="entry-header">
-          <h3>Cadet &mdash; Army ROTC (Simultaneous Membership Program)</h3>
-          <span class="date">Present</span>
+    <section id="operations" class="container reveal">
+      <h2><i class="fa-solid fa-boxes-stacked"></i> Operations Experience</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-marker"></span>
+          <div class="timeline-card">
+            <div class="entry-header">
+              <h3>Warehouse Associate &mdash; Amazon Last Mile Distribution Center</h3>
+              <span class="date">Summer 2025</span>
+            </div>
+            <p class="entry-subtitle">Frisco, TX</p>
+            <ul>
+              <li>Worked the midnight shift, trained in delivering approachable, high-quality customer service</li>
+              <li>Demonstrated flexibility by working multiple positions and closing every shift</li>
+            </ul>
+          </div>
         </div>
-        <p class="entry-subtitle">University of Arkansas</p>
-        <ul>
-          <li>Serving in the Arkansas Army National Guard while contracting with Army ROTC through the SMP</li>
-        </ul>
+
+        <div class="timeline-item">
+          <span class="timeline-marker"></span>
+          <div class="timeline-card">
+            <div class="entry-header">
+              <h3>Package Handler &mdash; UPS Warehouse</h3>
+              <span class="date">2025</span>
+            </div>
+            <p class="entry-subtitle">Springdale, AR</p>
+            <ul>
+              <li>Loaded and unloaded semis and UPS trucks, working multiple positions across shifts</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills Summary</h2>
-      <ul>
-        <li>Proficient in the Microsoft 365 Suite (Excel, PowerPoint, Outlook, Word), including financial and proforma modeling in Excel</li>
-        <li>Experienced using AI tools (Claude, ChatGPT) for research, data analysis, and workflow automation</li>
-        <li>Coursework in Supply Chain Management, Information Systems, and Accounting through the Sam M. Walton College of Business</li>
-        <li>Completing a Military Science minor alongside Army ROTC coursework</li>
-      </ul>
+    <section id="leadership" class="container reveal">
+      <h2><i class="fa-solid fa-shield-halved"></i> Leadership &amp; Military Experience</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-marker"></span>
+          <div class="timeline-card">
+            <div class="entry-header">
+              <h3>Cadet &mdash; Army ROTC (Simultaneous Membership Program)</h3>
+              <span class="date">Present</span>
+            </div>
+            <p class="entry-subtitle">University of Arkansas</p>
+            <ul>
+              <li>Serving in the Arkansas Army National Guard while contracting with Army ROTC through the SMP</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        <a href="mailto:blake.busboom@gmail.com">blake.busboom@gmail.com</a><br>
-        720-252-1373<br>
-        Fayetteville, AR 72701
-      </p>
+    <section id="skills" class="container reveal">
+      <h2><i class="fa-solid fa-star"></i> Skills Summary</h2>
+      <div class="pill-list">
+        <span class="pill">Proficient in the Microsoft 365 Suite (Excel, PowerPoint, Outlook, Word), including financial and proforma modeling in Excel</span>
+        <span class="pill">Experienced using AI tools (Claude, ChatGPT) for research, data analysis, and workflow automation</span>
+        <span class="pill">Coursework in Supply Chain Management, Information Systems, and Accounting through the Sam M. Walton College of Business</span>
+        <span class="pill">Completing a Military Science minor alongside Army ROTC coursework</span>
+      </div>
+    </section>
+
+    <section id="contact" class="container reveal">
+      <h2><i class="fa-solid fa-address-card"></i> Contact</h2>
+      <div class="contact-icons">
+        <a class="icon-button" href="mailto:blake.busboom@gmail.com" aria-label="Email Blake Busboom">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a class="icon-button" href="tel:7202521373" aria-label="Call or text Blake Busboom">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+        <a class="icon-button" href="https://www.linkedin.com/in/blake-busboom-622245284/" target="_blank" rel="noopener" aria-label="Blake Busboom on LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </div>
+      <p class="contact-address">Fayetteville, AR 72701</p>
     </section>
 
   </main>
 
   <footer>
+    <div class="contact-icons">
+      <a class="icon-button" href="mailto:blake.busboom@gmail.com" aria-label="Email Blake Busboom">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a class="icon-button" href="tel:7202521373" aria-label="Call or text Blake Busboom">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+      <a class="icon-button" href="https://www.linkedin.com/in/blake-busboom-622245284/" target="_blank" rel="noopener" aria-label="Blake Busboom on LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+    </div>
     <p>&copy; 2026 Blake Busboom</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
